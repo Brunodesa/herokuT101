@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <title>Escola Secundária de Maximinos</title>
 
-<!-- Load an icon library -->
+    <!-- Load an icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 
 <div class="navbar">
-  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a href="#home">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#news">News</a>
+        </div>
+    </div>
+    <a href="#news">News</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a href="#"></i> Registo</a>
 </div>
+
 
 {% block conteudo %}
 {% endblock %}
@@ -24,3 +37,4 @@
 <h3>&copy 2019 Bruno Gallego</h3>
 </body>
 </html>
+
