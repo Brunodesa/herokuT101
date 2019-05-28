@@ -8,36 +8,30 @@
 
 <body>
 
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Home</a>
+  <a href="/jogos">Jogos</a>
+  <a href="/registo">Registo</a>
   <a href="/login">Login</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
 </div>
 
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ MENU</button>
+</div>
 
-</body>
-</html>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
-
-
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 {% block conteudo %}
 {% endblock %}
-
-
-<div class="footer">
-    <p>Footer</p>
-</div>
-<small style="color:#bbb"<h3>&copy; Copyright 2019 Bruno Gallego</h3>
 </body>
-</html>
 

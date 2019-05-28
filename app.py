@@ -13,7 +13,13 @@ def login():
 
 @app.route('/registo')
 def registo():
-    return render_template('/registo.html')
+    return render_template('registo.html')
+
+
+@app.route('/jogos')
+def jogos():
+    return render_template('jogos.html')
+
 
 @app.route('/carrinho')
 def carrinho():
