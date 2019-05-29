@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/static/style.css">
-</head>
+<>
 
-<body>
-
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="/login">Login</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown
-      <i class="fa fa-caret-down"></i>
+<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+            onclick="w3_close()">Close &times;
     </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
+    <a href="/" class="w3-bar-item w3-button">Home</a>
+    <a href="/p1" class="w3-bar-item w3-button">p1</a>
+    <a href="/registo" class="w3-bar-item w3-button">Registo</a>
+    <a href="/login" class="w3-bar-item w3-button">Login</a>
 </div>
 
+<body>
+<button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+<div class="w3-container">
+</div>
 
-</body>
-</html>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
 
+
+
+
+</script>
 
 
 {% block conteudo %}
@@ -35,9 +40,35 @@
 
 
 <div class="footer">
-    <p>Footer</p>
-</div>
-<small style="color:#bbb"<h3>&copy; Copyright 2019 Bruno Gallego</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Segue-nos nas nossas redes sociais</h3>
+    <ul class="social-icons">
+        <li><a href="http://www.facebook.com"><i class="fab fa-instagram"></i>
+        <li><a href="http://www.twitter.com"><i class="fab fa-twitter"></i>
+            <body>
+            <u1 href="http://www.youtube.com"><i class="fab fa-youtube"></i>
+            </u1>
+     <h3>&copy; Copyright 2019 Bruno Gallego</h3>
 </body>
-</html>
+    </html>
 

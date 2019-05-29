@@ -10,6 +10,9 @@ def index():
 def login():
     return render_template('login.html')
 
+@app.route('/p1')
+def p1():
+    return render_template('p1.html')
 
 @app.route('/registo')
 def registo():
