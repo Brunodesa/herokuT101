@@ -68,10 +68,29 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+  background-color: lightgrey;
+  color: black;
+  text-align: left;
+  font-size: 20px;
 }
+
+.fa-facebook {
+  background: #3B5998;
+  color: black;
+
+.fa-instagram {
+  background: #3B5998;
+  color: black;
+
+.fa-twitter {
+  background: #3B5998;
+  color: black;
+
+.fa-youtube {
+  background: #3B5998;
+  color: black;
+
+
 
 
 </style>
