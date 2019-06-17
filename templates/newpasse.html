@@ -1,18 +1,16 @@
 {% extends 'layout.html' %}
 {% block titulo %}
-<title>Criar Nova Conta</title>
+<title>Alterar Palavra-passe</title>
 {% endblock %}
 {% block conteudo %}
 <center>
-    <h1>Criar Nova Conta</h1>
+    <h1>Alterar Palavra-passe</h1>
 <fieldset>
     <legend>Introduza os seus dados</legend>
     <form method="post">
         <h4>Utilizador</h4>
         <input type='text' name='utilizador' required>
-        <h4>Endereço de Email</h4>
-        <input type='text' name='email' required>
-        <h4>Palavra-Passe</h4>
+        <h4>Nova Palavra-Passe</h4>
         <input type='password' name='passe' required>
         <h4>Confirme a Passe</h4>
         <input type='password' name='cpasse' required>
@@ -20,10 +18,6 @@
         <input type='submit' value="Submeter">
     </form>
 </fieldset>
-    {% if erro %}<h4>{{ erro }}</h4>{% endif %}
+{% if erro %}<h1>{{ erro }}</h1>{% endif %}
 </center>
 {% endblock %}
-
-
-
-

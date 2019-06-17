@@ -1,6 +1,21 @@
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+
+fieldset {
+  padding: 50px;
+  width: 250px;
+  margin: auto;
+  border: 5px groove;
+  background-color: lightgray;
+}
+
+
+
 
 .navbar {
   overflow: hidden;
@@ -64,12 +79,13 @@ body {
 
 
 .footer {
-  position: fixed;
+  position: left;
   left: 0;
   bottom: 0;
+  padding: 50px;
   width: 100%;
   background-color: lightgrey;
-  color: black;
+  color: balck;
   text-align: left;
   font-size: 20px;
 }
@@ -87,11 +103,6 @@ body {
   color: black;
 
 .fa-youtube {
-  background: #3B5998;
+  background: #ff0000;
   color: black;
 
-
-
-
-</style>
-</head>
